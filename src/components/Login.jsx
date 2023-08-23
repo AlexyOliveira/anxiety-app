@@ -40,7 +40,12 @@ function Login() {
       ) : (
         <form action="" onSubmit={loginSubmit}>
           <h1>Olá, Qual é o seu nome</h1>
-          <input value={inputValue} onChange={handleInput} type="text" />
+          <input 
+          value={inputValue} 
+          onChange={handleInput} 
+          type="text"
+          maxLength={12}
+           />
           <br />
           <button disabled={isDisabled} type="submit">
             Entrar
