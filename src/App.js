@@ -1,15 +1,28 @@
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import Login from "./components/Login";
 import Home from "./components/Home";
 import Techniques from "./components/Techniques";
+import MobileWarning from "./components/MobileWarning";
+import { useEffect } from "react";
 
 function App() {
+  const navigate = useNavigate();
+  useEffect(() => {
+    
+      const windowWidth = window.innerWidth;
+      if (windowWidth > 800) {
+        // Redirecionar para a página de aviso para acessar pelo smartphone
+        navigate("mobile-warning")
+      }
+    
+  }, []);
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/mobile-warning" element={<MobileWarning />} />
         <Route path="/techniques" element={<Techniques />} />
       </Routes>
     </div>
