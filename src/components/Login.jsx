@@ -1,20 +1,22 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import logo from "../images/1.png";
+import "./Login.css";
 
 function Login() {
   const [inputValue, setInputValue] = useState("");
   const [isDisabled, setIsDisabled] = useState(true);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const userName = localStorage.getItem("anxietappname");
-    if (userName) {
-      navigate("home");
-    } else {
-      setIsLoading(false);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const userName = localStorage.getItem("anxietappname");
+  //   if (userName) {
+  //     navigate("home");
+  //   } else {
+  //     setIsLoading(false);
+  //   }
+  // }, []);
   const loginSubmit = (e) => {
     e.preventDefault();
     localStorage.setItem("anxietappname", inputValue);
@@ -32,25 +34,31 @@ function Login() {
     }
   };
   return (
-    <div>
+    <div className="login-container">
       {isLoading ? (
         <div className="spinner-border m-5 text-primary" role="status">
           <span className="visually-hidden">Loading...</span>
         </div>
       ) : (
-        <form action="" onSubmit={loginSubmit}>
-          <h1>Olá, Qual é o seu nome</h1>
-          <input 
-          value={inputValue} 
-          onChange={handleInput} 
-          type="text"
-          maxLength={12}
-           />
-          <br />
-          <button disabled={isDisabled} type="submit">
-            Entrar
-          </button>
-        </form>
+        <>
+        <div className="logo-circle">
+          <img className="logo" src={logo} alt="logo" />
+        </div>
+          
+          <form action="" onSubmit={loginSubmit}>
+            <input
+              value={inputValue}
+              onChange={handleInput}
+              type="text"
+              maxLength={12}
+              placeholder="Digite seu nome"
+            />
+            <br />
+            <button className=" login-btn btn btn-dark" disabled={isDisabled} type="submit">
+              Entrar
+            </button>
+          </form>
+        </>
       )}
     </div>
   );

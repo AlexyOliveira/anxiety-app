@@ -3,14 +3,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #097571;
+    background-color: #287fb5;
     height: 100vh;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .home-container h1 {
-    color: whitesmoke;
-    font-weight: 800;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-family: fantasy;
 }
 
 
@@ -23,7 +28,9 @@
     margin: 10px;
     width: 80%;
     justify-content: space-evenly;
-    background-color: #c2c9c1;
+    background-color: white;
+    text-decoration: none;
+    color: black;
   }
   
   .circle {
@@ -40,15 +47,27 @@
     height: 100%;
   }
   
-  /* Estilos opcionais */
-  .card p {
-    font-size: 16px;
-    color: #333;
-  }
-  
   .cardd:hover {
     box-shadow: none;
-    background-color: white;
+    background-color: #c2c9c1;
   }
   
-  
+.animate-card-left {
+  transform: translateX(-100%);
+  opacity: 0;
+  animation: slide-in 1s ease forwards;
+}
+
+.animate-card-right {
+  transform: translateX(-100%);
+  opacity: 0;
+  animation: slide-in 2s ease forwards;
+}
+
+
+@keyframes slide-in {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
