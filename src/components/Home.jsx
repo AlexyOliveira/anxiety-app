@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import "./Home.css";
 import tecnic from "../images/tecnic.png";
 import frases from "../images/frases.jpeg";
+import { Link } from "react-router-dom";
+import jogos from "../images/jogos.jpg"
 import soms from "../images/soms.avif";
 import Footer from "./Footer";
-import { Link } from "react-router-dom";
+
 
 function Home() {
   const [name, setName] = useState("");
@@ -34,7 +36,7 @@ function Home() {
       </Link>
       <Link class="cardd animate-card-left" to="/games">
         <div class="circle">
-          <img src={tecnic} alt="Imagem" />
+          <img src={jogos} alt="jogos" />
         </div>
         <div class="description">
           <p>JOGOS</p>
@@ -42,7 +44,7 @@ function Home() {
       </Link>
       <Link class="cardd cardd animate-card-right" to="/audios">
         <div class="circle">
-          <img src={soms} alt="Imagem" />
+          <img src={soms} alt="soms" />
         </div>
         <div class="description">
           <p>SOMS</p>
