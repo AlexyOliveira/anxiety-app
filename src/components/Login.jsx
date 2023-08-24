@@ -9,14 +9,14 @@ function Login() {
   const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
 
-  // useEffect(() => {
-  //   const userName = localStorage.getItem("anxietappname");
-  //   if (userName) {
-  //     navigate("home");
-  //   } else {
-  //     setIsLoading(false);
-  //   }
-  // }, []);
+  useEffect(() => {
+    const userName = localStorage.getItem("anxietappname");
+    if (userName) {
+      navigate("home");
+    } else {
+      setIsLoading(false);
+    }
+  }, []);
   const loginSubmit = (e) => {
     e.preventDefault();
     localStorage.setItem("anxietappname", inputValue);

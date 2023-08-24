@@ -14,8 +14,9 @@
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
-    color: #ffffff;
+    color: whitesmoke;
     font-family: fantasy;
+    text-decoration: underline overline 3px;
 }
 
 

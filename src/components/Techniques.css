@@ -1,0 +1,19 @@
+.techniques-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+article {
+    text-align: center;
+    
+    padding: 20px;
+}
+
+article img {
+    width: 100%;
+    margin-bottom: 10px;
+}

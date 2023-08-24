@@ -1,10 +1,13 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <footer>
-      <i class="fa-solid fa-house" />
+      <Link to="/home">
+        <i style={{ color: "black" }} class="fa-solid fa-house" />
+      </Link>
     </footer>
   );
 }
