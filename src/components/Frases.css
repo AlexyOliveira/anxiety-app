@@ -1,19 +1,8 @@
-.techniques-container {
+.frases-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     background-color: white;
     margin-top: 90px;
     margin-bottom: 20px;
-}
-
-article {
-    text-align: center;
-    
-    padding: 20px;
-}
-
-article img {
-    width: 100%;
-    margin-bottom: 10px;
 }

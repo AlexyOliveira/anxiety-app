@@ -6,10 +6,12 @@ import terapia from "../images/terapia.jpg";
 import corrida from "../images/corrida.jpg";
 import respiracao from "../images/respiracao.gif";
 import Footer from "./Footer";
+import Header from "./Header";
 
 function Techniques() {
   return (
     <div className="techniques-container">
+      <Header />
       <article>
         <h1>Técnica 1: Exercícios de Relaxamento</h1>
         <section>

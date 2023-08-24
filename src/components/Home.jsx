@@ -1,22 +1,16 @@
-import React, { useEffect, useState } from "react";
 import "./Home.css";
 import tecnic from "../images/tecnic.png";
 import frases from "../images/frases.jpeg";
 import { Link } from "react-router-dom";
-import jogos from "../images/jogos.jpg"
+import jogos from "../images/jogos.jpg";
 import soms from "../images/soms.avif";
 import Footer from "./Footer";
-
+import Header from "./Header";
 
 function Home() {
-  const [name, setName] = useState("");
-  useEffect(() => {
-    const userName = localStorage.getItem("anxietappname");
-    setName(userName);
-  }, []);
   return (
     <div className="home-container">
-      <h1> Olá {name}!</h1>
+      <Header />
       <Link class="cardd animate-card-left" to="/techniques">
         <div class="circle">
           <img src={tecnic} alt="Imagem" />
@@ -25,7 +19,7 @@ function Home() {
           <p>TÉCNICAS</p>
         </div>
       </Link>
-      
+
       <Link class="cardd animate-card-right" to="/frases">
         <div class="circle">
           <img src={frases} alt="Imagem" />
