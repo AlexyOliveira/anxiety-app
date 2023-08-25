@@ -47,6 +47,27 @@ const frases_list = [
     id: 12,
     link: "https://a-static.mlcdn.com.br/800x560/papel-de-parede-frases-motivacionais-positividade-adecorar/olistsp/ospxqfxa7kibjgm4/504cb297da0eb560c40e0c6c98222a36.jpeg",
   },
+  {
+    id: 13,
+    link: "https://www.awebic.com/wp-content/uploads/2022/12/4-2-31.jpg",
+  },
+  {
+    id: 14,
+    link: "https://www.mensagens10.com.br/wp-content/uploads/2019/01/exercicio.jpeg",
+  },
+  {
+    id: 15,
+    link: "https://www.awebic.com/wp-content/uploads/2022/05/3-1.png",
+  },
+  {
+    id: 16,
+    link: "https://pensamentos.org/wp-content/uploads/2023/04/frases-de-paz.jpg",
+  },
+  {
+    id: 17,
+    link: "https://viagemecura.com.br/wp-content/uploads/2022/07/1-1024x1024.webp",
+  },
+  
 ];
 
 export default frases_list;
