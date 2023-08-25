@@ -41,10 +41,10 @@ function Login() {
         </div>
       ) : (
         <>
-        <div className="logo-circle">
-          <img className="logo" src={logo} alt="logo" />
-        </div>
-          
+          <div className="logo-circle">
+            <img className="logo" src={logo} alt="logo" />
+          </div>
+
           <form action="" onSubmit={loginSubmit}>
             <input
               value={inputValue}
@@ -52,9 +52,14 @@ function Login() {
               type="text"
               maxLength={12}
               placeholder="Digite seu nome"
+              className="login-input"
             />
             <br />
-            <button className=" login-btn btn btn-dark" disabled={isDisabled} type="submit">
+            <button
+              className=" login-btn btn btn-dark"
+              disabled={isDisabled}
+              type="submit"
+            >
               Entrar
             </button>
           </form>

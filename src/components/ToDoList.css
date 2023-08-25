@@ -1,0 +1,47 @@
+.list-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    
+}
+
+.list-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.list-form input {
+   margin-bottom: 10px;
+   width: 70%;
+}
+
+ li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid red;
+}
+
+.list {
+    padding: 20px;
+    justify-self: center;
+    margin-right: 20px;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.text {
+    word-wrap: break-word;
+    width: 180px;
+}
+

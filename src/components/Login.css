@@ -33,7 +33,7 @@
     background-color: blueviolet;
   }
 
-  input {
+  .login-input {
     padding: 5px;
     border-radius: 5px;
     border: none;

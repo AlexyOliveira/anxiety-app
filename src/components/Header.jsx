@@ -35,6 +35,14 @@ function Header() {
           </div>
           Frases
         </header>
+      ) : location.pathname === "/to-do-list" ? (
+        <header>
+          {" "}
+          <div className="logo-circle-header">
+            <img className="logo" src={logo} alt="logo" />
+          </div>
+          Lista de tarefas
+        </header>
       ) : null}
     </>
   );

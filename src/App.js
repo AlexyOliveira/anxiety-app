@@ -6,12 +6,12 @@ import Techniques from "./components/Techniques";
 import MobileWarning from "./components/MobileWarning";
 import { useEffect } from "react";
 import Frases from "./components/Frases";
+import ToDoList from "./components/ToDoList";
 
 function App() {
   const navigate = useNavigate();
   const windowWidth = window.innerWidth;
   useEffect(() => {
-    
     if (windowWidth > 800) {
       // Redirecionar para a página de aviso para acessar pelo smartphone
       navigate("mobile-warning");
@@ -25,6 +25,7 @@ function App() {
         <Route path="/mobile-warning" element={<MobileWarning />} />
         <Route path="/techniques" element={<Techniques />} />
         <Route path="/frases" element={<Frases />} />
+        <Route path="/to-do-list" element={<ToDoList />} />
       </Routes>
     </div>
   );

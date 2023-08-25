@@ -2,7 +2,7 @@ import "./Home.css";
 import tecnic from "../images/tecnic.png";
 import frases from "../images/frases.jpeg";
 import { Link } from "react-router-dom";
-import jogos from "../images/jogos.jpg";
+import lista from "../images/lista.jpg";
 import soms from "../images/soms.avif";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -28,12 +28,12 @@ function Home() {
           <p>FRASES</p>
         </div>
       </Link>
-      <Link className="cardd animate-card-left" to="/games">
+      <Link className="cardd animate-card-left" to="/to-do-list">
         <div className="circle">
-          <img src={jogos} alt="jogos" />
+          <img src={lista} alt="jogos" />
         </div>
         <div className="description">
-          <p>JOGOS</p>
+          <p>LISTA</p>
         </div>
       </Link>
       <Link className="cardd cardd animate-card-right" to="/audios">
