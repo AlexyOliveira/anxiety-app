@@ -1,8 +1,23 @@
 .frases-container {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: white;
+    overflow-x: auto;
     margin-top: 90px;
-    margin-bottom: 20px;
+}
+
+
+.card {
+  flex: 0 0 auto;
+  margin-right: 18px;
+  margin-left: 18px;
+  width: 90%;
+  background-image: url("../images/polaroide.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card img {
+    
+    width: 100%;
+    padding: 10px;
 }

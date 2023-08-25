@@ -1,12 +1,27 @@
 import React from "react";
 import "./Footer.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 function Footer() {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const handleClick = () => {
+    localStorage.removeItem("anxietappname");
+    navigate("/");
+  };
   return (
     <footer>
+      {location.pathname === "/home" && (
+        <i
+          onClick={handleClick}
+          style={{ color: "black" }}
+          className="rotated-div fa-solid fa-arrow-right-from-bracket"
+          i
+        />
+      )}
+
       <Link to="/home">
-        <i style={{ color: "black" }} class="fa-solid fa-house" />
+        <i style={{ color: "black" }} className="fa-solid fa-house" />
       </Link>
     </footer>
   );

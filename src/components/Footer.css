@@ -9,3 +9,9 @@ footer {
     font-size: 20px;
     padding: 10px;
 }
+
+.rotated-div {
+    transform-origin: center;
+    transform: rotate(180deg);
+    margin-right: 100px;
+  }
