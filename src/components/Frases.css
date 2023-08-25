@@ -1,14 +1,14 @@
 .frases-container {
-    display: flex;
     overflow-x: auto;
-    margin-top: 90px;
+    margin-top: 70px;
+    margin-bottom: 50px;
 }
 
 
 .card {
   flex: 0 0 auto;
-  margin-right: 18px;
-  margin-left: 18px;
+  margin: 18px;
+  box-shadow: 5px 5px 45px 39px #297cb4;
   width: 90%;
   background-image: url("../images/polaroide.jpg");
   background-position: center;
@@ -19,5 +19,7 @@
 .card img {
     
     width: 100%;
-    padding: 10px;
+    padding: 20px;
+    margin-bottom: 60px;
+    
 }

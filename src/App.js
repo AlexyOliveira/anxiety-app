@@ -9,11 +9,15 @@ import Frases from "./components/Frases";
 
 function App() {
   const navigate = useNavigate();
+  const windowWidth = window.innerWidth;
   useEffect(() => {
-    const windowWidth = window.innerWidth;
+    
     if (windowWidth > 800) {
       // Redirecionar para a página de aviso para acessar pelo smartphone
       navigate("mobile-warning");
+    }
+    if (windowWidth < 800) {
+      navigate("/");
     }
   }, []);
   return (
