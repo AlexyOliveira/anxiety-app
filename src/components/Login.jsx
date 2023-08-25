@@ -12,7 +12,7 @@ function Login() {
   useEffect(() => {
     const userName = localStorage.getItem("anxietappname");
     if (userName) {
-      navigate("home");
+      navigate("/home");
     } else {
       setIsLoading(false);
     }
@@ -20,7 +20,7 @@ function Login() {
   const loginSubmit = (e) => {
     e.preventDefault();
     localStorage.setItem("anxietappname", inputValue);
-    navigate("home");
+    navigate("/home");
   };
 
   const handleInput = (e) => {

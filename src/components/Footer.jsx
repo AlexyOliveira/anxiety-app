@@ -16,7 +16,6 @@ function Footer() {
           onClick={handleClick}
           style={{ color: "black" }}
           className="rotated-div fa-solid fa-arrow-right-from-bracket"
-          i
         />
       )}
 

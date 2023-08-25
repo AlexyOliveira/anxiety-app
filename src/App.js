@@ -16,9 +16,6 @@ function App() {
       // Redirecionar para a página de aviso para acessar pelo smartphone
       navigate("mobile-warning");
     }
-    if (windowWidth < 800) {
-      navigate("/");
-    }
   }, []);
   return (
     <div className="App">
