@@ -9,7 +9,7 @@ function Frases() {
     <div className="frases-container">
       <Header />
       {frases_list.map((f) => (
-        <div className="card" key={f.id} >
+        <div className="frases-card card" key={f.id}>
           <img src={f.link} alt="frase" />
         </div>
       ))}

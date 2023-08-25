@@ -43,6 +43,14 @@ function Header() {
           </div>
           Lista de tarefas
         </header>
+      ) : location.pathname === "/games" ? (
+        <header>
+          {" "}
+          <div className="logo-circle-header">
+            <img className="logo" src={logo} alt="logo" />
+          </div>
+          Jogos
+        </header>
       ) : null}
     </>
   );

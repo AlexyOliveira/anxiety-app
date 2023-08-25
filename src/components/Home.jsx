@@ -3,7 +3,7 @@ import tecnic from "../images/tecnic.png";
 import frases from "../images/frases.jpeg";
 import { Link } from "react-router-dom";
 import lista from "../images/lista.jpg";
-import soms from "../images/soms.avif";
+import jogos from "../images/jogos.jpg";
 import Footer from "./Footer";
 import Header from "./Header";
 
@@ -36,12 +36,12 @@ function Home() {
           <p>LISTA</p>
         </div>
       </Link>
-      <Link className="cardd cardd animate-card-right" to="/audios">
+      <Link className="cardd cardd animate-card-right" to="/games">
         <div className="circle">
-          <img src={soms} alt="soms" />
+          <img src={jogos} alt="soms" />
         </div>
         <div className="description">
-          <p>SOMS</p>
+          <p>JOGOS</p>
         </div>
       </Link>
       <Footer />

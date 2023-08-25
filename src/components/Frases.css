@@ -5,7 +5,7 @@
 }
 
 
-.card {
+.frases-card {
   flex: 0 0 auto;
   margin: 18px;
   box-shadow: 5px 5px 45px 39px #297cb4;
@@ -16,10 +16,10 @@
   background-repeat: no-repeat;
 }
 
-.card img {
+.frases-card img {
     
     width: 100%;
-    padding: 20px;
+   padding: 10px;
     margin-bottom: 60px;
     
 }

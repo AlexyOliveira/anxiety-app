@@ -7,6 +7,7 @@ import MobileWarning from "./components/MobileWarning";
 import { useEffect } from "react";
 import Frases from "./components/Frases";
 import ToDoList from "./components/ToDoList";
+import Games from "./components/Games";
 
 function App() {
   const navigate = useNavigate();
@@ -25,6 +26,7 @@ function App() {
         <Route path="/mobile-warning" element={<MobileWarning />} />
         <Route path="/techniques" element={<Techniques />} />
         <Route path="/frases" element={<Frases />} />
+        <Route path="/games" element={<Games />} />
         <Route path="/to-do-list" element={<ToDoList />} />
       </Routes>
     </div>
