@@ -22,6 +22,9 @@ function Footer() {
       <Link to="/home">
         <i style={{ color: "black" }} className="fa-solid fa-house" />
       </Link>
+      <Link to="/about" style={{ textDecoration: "none" }}>
+        <div className="about">SOBRE</div>
+      </Link>
     </footer>
   );
 }

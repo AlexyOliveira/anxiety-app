@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import Frases from "./components/Frases";
 import ToDoList from "./components/ToDoList";
 import Games from "./components/Games";
+import About from "./components/About";
 
 function App() {
   const navigate = useNavigate();
@@ -28,6 +29,7 @@ function App() {
         <Route path="/frases" element={<Frases />} />
         <Route path="/games" element={<Games />} />
         <Route path="/to-do-list" element={<ToDoList />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </div>
   );

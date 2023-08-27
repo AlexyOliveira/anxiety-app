@@ -33,7 +33,7 @@ function Home() {
           <img src={lista} alt="jogos" />
         </div>
         <div className="description">
-          <p>LISTA</p>
+          <p>TAREFAS</p>
         </div>
       </Link>
       <Link className="cardd cardd animate-card-right" to="/games">
