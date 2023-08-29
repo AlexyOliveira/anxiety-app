@@ -11,7 +11,6 @@ function About() {
         <p>Cauã Machado Berlitz</p>
         <p>Gabriela Machado</p>
         <p>Giovanna Montiel Fialho</p>
-        <p>Haianny</p>
         <p>Lucas Inácio De Oliveira Lemos</p>
         <h1>SAUDE MENTAL: ANSIEDADE</h1>
         <h4>Osório</h4>
