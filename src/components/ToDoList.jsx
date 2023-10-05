@@ -59,6 +59,7 @@ function ToDoList() {
           maxLength={30}
           onChange={getText}
           value={text}
+          placeholder="Oque você vai fazer hoje?"
           type="text"
           name=""
           id=""

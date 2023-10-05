@@ -2,7 +2,7 @@ import "./Home.css";
 import tecnic from "../images/tecnic.png";
 import frases from "../images/frases.jpeg";
 import { Link } from "react-router-dom";
-import lista from "../images/lista.jpg";
+import lista from "../images/lista.png";
 import jogos from "../images/jogos.jpg";
 import Footer from "./Footer";
 import Header from "./Header";
