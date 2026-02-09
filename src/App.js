@@ -10,6 +10,7 @@ import ToDoList from "./components/ToDoList";
 import Games from "./components/Games";
 import About from "./components/About";
 
+
 function App() {
   const navigate = useNavigate();
   const windowWidth = window.innerWidth;
